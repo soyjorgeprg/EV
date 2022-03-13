@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="Neumaticos" type="Spatial"]
+
+[node name="CSGCylinder" type="CSGCylinder" parent="."]
+sides = 40

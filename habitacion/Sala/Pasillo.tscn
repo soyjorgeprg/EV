@@ -1,0 +1,41 @@
+[gd_scene format=2]
+
+[node name="Pasillo" type="Spatial"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PasilloA" type="CSGPolygon" parent="."]
+transform = Transform( -4.37114e-08, 0, 1.5, 0, 1, 0, -1, 0, -6.55671e-08, 3, 0, -0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PasilloInterior" type="CSGPolygon" parent="PasilloA"]
+transform = Transform( 0.9, 0, 3.68298e-15, 0, 0.9, 0, -3.55271e-15, 0, 0.933, 0.05, 0.1, -0.033 )
+operation = 2
+
+[node name="PuertaPasillo" type="CSGPolygon" parent="PasilloA"]
+transform = Transform( 0.5, 0, -1.77636e-15, 0, 0.75, 0, 8.88179e-16, 0, 1, 0.25, 0.1, -0.96 )
+operation = 2
+depth = 0.04
+
+[node name="Corte" type="CSGPolygon" parent="PasilloA"]
+transform = Transform( -3.93403e-08, 0, -0.05, 0, 0.9, 0, 0.6, 0, -1.45705e-09, 0.95, 0.1, -0.633333 )
+operation = 2
+
+[node name="PasilloB" type="CSGPolygon" parent="."]
+transform = Transform( 1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 2, 0, -1.5 )
+
+[node name="PuertaPasillo" type="CSGPolygon" parent="PasilloB"]
+transform = Transform( 0.5, 0, 5.32907e-15, 0, 0.75, 0, -1.77636e-15, 0, 1.5, 0.25, 0.1, -0.95 )
+operation = 2
+depth = 0.04
+
+[node name="PasilloInterior" type="CSGPolygon" parent="PasilloB"]
+transform = Transform( 0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0.05, 0.1, -0.05 )
+operation = 2
+
+[node name="Corte" type="CSGPolygon" parent="PasilloB"]
+transform = Transform( 0.9, 0, 1.77636e-16, 0, 0.9, 0, -3.19744e-15, 0, 0.05, 0.05, 0.1, 0 )
+operation = 2

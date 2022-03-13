@@ -1,0 +1,12 @@
+[gd_scene format=2]
+
+[node name="MesaFondo" type="Spatial"]
+
+[node name="CSGPolygon" type="CSGPolygon" parent="."]
+transform = Transform( 2, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="CSGPolygon2" type="CSGPolygon" parent="."]
+transform = Transform( 1.59727, 0, -0.601815, 0, 1.5, 0, 1.20363, 0, 0.798635, -1.6, 0, -1.2 )
+
+[node name="CSGPolygon3" type="CSGPolygon" parent="."]
+transform = Transform( 1.59727, 0, 0.601815, 0, 1.5, 0, -1.20363, 0, 0.798635, 2, 0, 0 )
