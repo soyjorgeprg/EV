@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="PataA" type="CSGCylinder" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 0.1, 0, 0.5, 0 )
+sides = 64
+
+[node name="PataB" type="CSGCylinder" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 0.1, 1, 0.5, 0 )
+sides = 64
+
+[node name="Superior" type="CSGSphere" parent="."]
+transform = Transform( 0.6, 0, 0, 0, 0.2, 0, 0, 0, 0.1, 0.5, 1, 0 )
+rings = 25

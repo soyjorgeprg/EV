@@ -1,0 +1,18 @@
+[gd_scene format=2]
+
+[node name="MesaMando" type="Spatial"]
+
+[node name="CentralAlto" type="CSGPolygon" parent="."]
+transform = Transform( 1, 0, 0, 0, 2.5, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="MesaBajaA" type="CSGPolygon" parent="."]
+transform = Transform( 0.798635, 0, -0.601815, 0, 1, 0, 0.601815, 0, 0.798635, 0.5, 0, 0 )
+
+[node name="MesaBajaB" type="CSGPolygon" parent="."]
+transform = Transform( -0.544639, 0, 0.838671, 0, 1, 0, -0.838671, 0, -0.544639, 0.5, 0, 0 )
+
+[node name="MesaLarga" type="CSGPolygon" parent="."]
+transform = Transform( 1.5, 0, 0, 0, 0.2, 0, 0, 0, 5, -0.25, 0.8, 0 )
+
+[node name="Cajones" type="CSGPolygon" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.8, 0, 0, 0, 5, 0, 0, 0 )

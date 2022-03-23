@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Circuito/Valla.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Circuito/MuroIngenieros.tscn" type="PackedScene" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="CalleBoxes" type="CSGPolygon" parent="."]
+transform = Transform( 40, 0, 0, 0, 0.3, 0, 0, 0, 200, 0, 0, 0 )
+
+[node name="Muro" type="Spatial" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MuroSuperior" type="CSGPolygon" parent="Muro"]
+transform = Transform( -1.31134e-07, -1, 0, 3, -4.37114e-08, 0, 0, 0, 200, 40, 0, 0 )
+
+[node name="MuroInferior" type="CSGPolygon" parent="Muro"]
+transform = Transform( 4, 0, 0, 0, 1, 0, 0, 0, 200, 36, 0, 0 )
+
+[node name="Valla" type="Spatial" parent="Muro"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -100 )
+
+[node name="VallaA" parent="Muro/Valla" instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36.5, 1, 0 )
+
+[node name="VallaB" parent="Muro/Valla" instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36.5, 1, -1 )
+
+[node name="VallaC" parent="Muro/Valla" instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36.5, 1, 1 )
+
+[node name="Muro" parent="Muro" instance=ExtResource( 2 )]
+transform = Transform( -8.74228e-08, 0, -2, 0, 1, 0, 2, 0, -8.74228e-08, 39, 1, -102.5 )

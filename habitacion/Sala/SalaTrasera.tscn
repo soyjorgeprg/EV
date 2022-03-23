@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="SalaTrasera" type="CSGPolygon"]
+transform = Transform( 15, 0, 0, 0, 3, 0, 0, 0, 25, 0, 0, 0 )
+
+[node name="Interior" type="CSGPolygon" parent="."]
+transform = Transform( 0.95, 0, 0, 0, 0.9, 0, 0, 0, 0.45, 0.025, 0.1, -0.05 )
+operation = 2
+depth = 2.0
+
+[node name="Puerta" type="CSGPolygon" parent="."]
+transform = Transform( -4.37114e-09, 0, 0.667, 0, 0.75, 0, -0.1, 0, -2.91555e-08, 1, 0.1, -0.43 )
+operation = 2
+depth = 0.04
+
+[node name="Pared" type="CSGPolygon" parent="."]
+transform = Transform( -1.09278e-09, 0, -0.8, 0, 1, 0, 0.025, 0, -3.49691e-08, 0, 0, -0.5 )
+
+[node name="Porton" type="CSGPolygon" parent="."]
+transform = Transform( 0.05, 0, 0, 0, 0.8, 0, 0, 0, 0.3, 0, 0, -0.1 )
+operation = 2

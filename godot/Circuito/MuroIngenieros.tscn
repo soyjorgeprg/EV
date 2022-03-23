@@ -1,0 +1,19 @@
+[gd_scene format=2]
+
+[node name="Muro" type="Spatial"]
+
+[node name="Mesa" type="CSGPolygon" parent="."]
+transform = Transform( 2, 0, 0, 0, 0.1, 0, 0, 0, 0.4, 0, 1, 0 )
+
+[node name="Techo" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, 1, 0 )
+sides = 25
+
+[node name="Interior" type="CSGCylinder" parent="Techo"]
+transform = Transform( 0.8, 0, 0, 0, 1, 0, 0, 0, 0.8, 0, 0, -0.15 )
+operation = 2
+sides = 25
+
+[node name="Interior2" type="CSGPolygon" parent="Techo"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 1, -1, -0.5, 1 )
+operation = 2

@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="TV" type="Spatial"]
+
+[node name="Pantalla" type="CSGPolygon" parent="."]
+transform = Transform( 1.8, 0, 0, 0, 0.9, 0, 0, 0, 0.025, 0, 0, -0.025 )

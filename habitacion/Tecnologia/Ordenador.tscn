@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="Ordenador" type="Spatial"]
+
+[node name="Teclado" type="CSGPolygon" parent="."]
+transform = Transform( 0.8, 0, 0, 0, 0.05, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Pantalla" type="CSGPolygon" parent="."]
+transform = Transform( -3.49691e-08, -0.05, 0, 0.8, -2.18557e-09, 0, 0, 0, 1, 0, 0, 0 )

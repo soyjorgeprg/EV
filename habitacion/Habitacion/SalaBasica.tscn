@@ -1,0 +1,18 @@
+[gd_scene format=2]
+
+[node name="Sala" type="CSGPolygon"]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+depth = 2.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Interior" type="CSGPolygon" parent="."]
+transform = Transform( 0.95, 0, 0, 0, 0.9, 0, 0, 0, 0.95, 0.025, 0.1, -0.05 )
+operation = 2
+depth = 2.0
+
+[node name="Puerta" type="CSGPolygon" parent="."]
+transform = Transform( -1.45705e-08, 0, 0.666667, 0, 0.75, 0, -0.5, 0, -4.37114e-08, 1, 0.1, -0.75 )
+operation = 2
+depth = 0.04

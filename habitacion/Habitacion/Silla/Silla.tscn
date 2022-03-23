@@ -1,0 +1,26 @@
+[gd_scene format=2]
+
+[node name="Silla" type="Spatial"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PataA" type="CSGPolygon" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 1.5, 0, 0, 0 )
+
+[node name="PataB" type="CSGPolygon" parent="."]
+transform = Transform( 1.5, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.65, 0, -0.75 )
+
+[node name="Pie" type="CSGPolygon" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 0.1, 0, 0, -0.75 )
+
+[node name="Asiento" type="CSGSphere" parent="."]
+transform = Transform( 0.6, 0, 0, 0, 0.075, 0, 0, 0, 1, 0, 1, -0.75 )
+radial_segments = 40
+
+[node name="RespaldoA" type="CSGPolygon" parent="."]
+transform = Transform( 0.0965926, -0.194114, 0, 0.0258819, 0.724444, 0, 0, 0, 0.1, -0.6, 1, -0.75 )
+
+[node name="RespaldoB" type="CSGSphere" parent="."]
+transform = Transform( 0.0482963, -0.12941, 0, 0.012941, 0.482963, 0, 0, 0, 0.8, -0.7, 1.75, -0.8 )
+rings = 100

@@ -1,0 +1,26 @@
+[gd_scene format=2]
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0 )
+
+[node name="Cuerpo" type="CSGPolygon" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.7, 0, 0, 0, 3, 0, 0, 0 )
+
+[node name="CuerpoSuperior" type="CSGPolygon" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.7, 0, 0, 0, 2, 0, 0.7, -0.5 )
+
+[node name="Rueda" type="CSGCylinder" parent="."]
+transform = Transform( -1.74846e-08, -0.4, 0, 0.4, -1.74846e-08, 0, 0, 0, 0.4, 0, 0, -0.5 )
+sides = 30
+
+[node name="Rueda2" type="CSGCylinder" parent="."]
+transform = Transform( -1.74846e-08, -0.4, 0, 0.4, -1.74846e-08, 0, 0, 0, 0.4, 0, 0, -2.5 )
+sides = 30
+
+[node name="Rueda3" type="CSGCylinder" parent="."]
+transform = Transform( -1.74846e-08, -0.4, 0, 0.4, -1.74846e-08, 0, 0, 0, 0.4, 1, 0, -2.5 )
+sides = 30
+
+[node name="Rueda4" type="CSGCylinder" parent="."]
+transform = Transform( -1.74846e-08, -0.4, 0, 0.4, -1.74846e-08, 0, 0, 0, 0.4, 1, 0, -0.5 )
+sides = 30
