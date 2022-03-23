@@ -16,3 +16,11 @@ depth = 2.0
 transform = Transform( -1.09278e-08, 0, 0.667, 0, 0.75, 0, -0.25, 0, -2.91555e-08, 1, 0.1, -0.875 )
 operation = 2
 depth = 0.04
+
+[node name="PortonA" type="CSGPolygon" parent="."]
+transform = Transform( 0.025, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -0.1 )
+operation = 2
+
+[node name="PortonB" type="CSGPolygon" parent="."]
+transform = Transform( 0.025, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, -1.1 )
+operation = 2

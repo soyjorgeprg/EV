@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Sala/SalaBasica.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sala/Pasillo.tscn" type="PackedScene" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://Tecnologia/Ordenador.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Mobiliario/MesaReuniones.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Piezas/Neumaticos.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Sala/SalaTrasera.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Circuito/CalleBoxes.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Piezas/Coche.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Mobiliario/Estanteria.tscn" type="PackedScene" id=15]
 
 [node name="BOX" type="Spatial"]
 
@@ -24,8 +28,8 @@ __meta__ = {
 [node name="Pasillo" parent="EscenaBasica" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -7 )
 
-[node name="SalaIngenieros" parent="EscenaBasica" instance=ExtResource( 1 )]
-transform = Transform( -6.55671e-07, 0, -10, 0, 3, 0, 15, 0, -4.37114e-07, 14.5, 0, -37.5 )
+[node name="SalaTrasera" parent="EscenaBasica" instance=ExtResource( 12 )]
+transform = Transform( -6.55671e-07, 0, -25, 0, 3, 0, 15, 0, -1.09278e-06, 12.5, 0, -37.5 )
 
 [node name="Garaje" type="Spatial" parent="."]
 
@@ -101,9 +105,6 @@ transform = Transform( 1.14641e-15, 3.0598e-08, 0.7, 0.6, -3.0598e-08, 0, 2.6226
 
 [node name="SalaTrasera" type="Spatial" parent="."]
 
-[node name="Pared" type="CSGPolygon" parent="SalaTrasera"]
-transform = Transform( 0.3, 0, 0, 0, 2.5, 0, 0, 0, 11.1, 24, 0.5, -26 )
-
 [node name="SalaReuniones" type="Spatial" parent="SalaTrasera"]
 transform = Transform( 0.3, 0, 0, 0, 2.5, 0, 0, 0, 11.1, 24, 0.5, -26 )
 
@@ -117,13 +118,23 @@ transform = Transform( -0.25, 0, 6.11959e-10, 0, 0.02, 0, -2.18557e-08, 0, -0.00
 transform = Transform( 0.3, 0, 0, 0, 2.5, 0, 0, 0, 11.1, 24, 0.5, -26 )
 
 [node name="Neumaticos" parent="SalaTrasera/SalaMaterial" instance=ExtResource( 11 )]
-transform = Transform( 1.66667, 0, 0, 0, 0.2, 0, 0, 0, 0.045045, -26.6667, 0, -0.36036 )
+transform = Transform( 1.66667, 0, 0, 0, 0.2, 0, 0, 0, 0.045045, -32, 0, -0.36036 )
 
 [node name="Neumaticos2" parent="SalaTrasera/SalaMaterial" instance=ExtResource( 11 )]
-transform = Transform( 1.66667, 0, 0, 0, 0.2, 0, 0, 0, 0.045045, -26.667, 0.2, -0.36 )
+transform = Transform( 1.66667, 0, 0, 0, 0.2, 0, 0, 0, 0.045045, -32, 0.2, -0.36 )
 
 [node name="Neumaticos3" parent="SalaTrasera/SalaMaterial" instance=ExtResource( 11 )]
-transform = Transform( 1.66667, 0, 0, 0, 0.2, 0, 0, 0, 0.045045, -26.667, 0.4, -0.36 )
+transform = Transform( 1.66667, 0, 0, 0, 0.2, 0, 0, 0, 0.045045, -32, 0.4, -0.36 )
+
+[node name="Estanteria" parent="SalaTrasera/SalaMaterial" instance=ExtResource( 15 )]
+transform = Transform( -1.45705e-07, 0, 3.33333, 0, 0.4, 0, -0.0900901, 0, -3.93796e-09, -30, -0.08, 0.09009 )
+
+[node name="Exterior" type="Spatial" parent="."]
+
+[node name="CalleBoxes" parent="Exterior" instance=ExtResource( 13 )]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.5, 0, -100 )
+
+[node name="Coche" parent="Exterior" instance=ExtResource( 14 )]
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( -4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, -2, 5, -5 )
