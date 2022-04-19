@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://BLENDER/monitores.escn" type="PackedScene" id=1]
+
+[node name="monitores" instance=ExtResource( 1 )]
+
+[node name="MarcoDcho" parent="." index="0"]
+transform = Transform( 0.193185, 0, 0.517637, 0, 1, 0, -0.0517637, 0, 1.93185, -0.5, -3.99787, 2.2 )
+
+[node name="PantallaDcha" parent="." index="2"]
+transform = Transform( 0.0482963, 0, 0.465874, 0, 0.95, 0, -0.0129409, 0, 1.73867, -0.33, -3.99787, 2.2 )
+
+[node name="MarcoIzq" parent="." index="3"]
+transform = Transform( 0.193185, 0, -0.517637, 0, 1, 0, 0.0517637, 0, 1.93185, -0.5, -3.99787, -2.2 )
+
+[node name="PantallaIzq" parent="." index="4"]
+transform = Transform( 0.0482963, 0, -0.465874, 0, 0.95, 0, 0.0129409, 0, 1.73867, -0.33, -3.99787, -2.2 )
+
+[node name="Sujeccion" parent="." index="6"]
+transform = Transform( 0.2, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, -3.49787, 0 )
+
+[node name="EngancheBajo" parent="." index="7"]
+transform = Transform( 0.2, 0, 0, 0, 2, 0, 0, 0, 0.2, -1, -0.997875, 0 )
+
+[node name="Medio" parent="." index="9"]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.3, -0.62, -3.99787, 0 )
